@@ -52,13 +52,14 @@
         android:layout_marginTop="50dp"
         android:background="#FFAABB"
         />
+
+    <!--  orientation="horizontal"  -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="20dp"
         android:gravity="center_horizontal">
-
         <TextView
             android:id="@+id/textView2Id"
             android:layout_width="wrap_content"
@@ -68,7 +69,6 @@
             android:textSize = "25sp"
             android:background="#FF99FF"
             />
-
         <TextView
             android:id="@+id/textView3Id"
             android:layout_width="wrap_content"
@@ -84,7 +84,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_horizontal">
-
         <TextView
             android:id="@+id/textView4Id"
             android:layout_width="wrap_content"
@@ -94,13 +93,44 @@
             android:textSize = "25sp"
             android:background="#FF99DD"
             />
-
         <TextView
             android:id="@+id/textView5Id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:text="Hello_World!"
+            android:textSize = "25sp"
+            android:background="#FF99CC"
+            />
+    </LinearLayout>
+
+    <!--  比重：
+            layout_weight：
+            在其变化方向上，
+                如果为march_parent，则为反相关
+                如果为wrap_content，则为正相关
+    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Hello_World!"
+            android:layout_weight="3"
+            android:textSize = "25sp"
+            android:background="#FF99DD"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Hello_World!"
+            android:layout_weight="1"
             android:textSize = "25sp"
             android:background="#FF99CC"
             />
