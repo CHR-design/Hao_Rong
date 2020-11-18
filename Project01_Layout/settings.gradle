@@ -1,0 +1,4 @@
+include ':project01_linearlayout'
+include ':project02_relativelayout'
+include ':app'
+rootProject.name = "Project01_Layout"
