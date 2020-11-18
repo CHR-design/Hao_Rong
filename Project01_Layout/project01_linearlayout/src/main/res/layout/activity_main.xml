@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <!--  对齐左上角  -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Hello_World!"
+        android:textSize = "25sp"
+        android:background="#FF99FF"
+        />
+    <!--  对齐右上角  -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Hello_World!"
+        android:textSize = "25sp"
+        android:background="#FF99FF"
+        />
+    <!--  对齐左下角（orientation="vertical" 在垂直方向上不起作用）  -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:text="Hello_World!"
+        android:textSize = "25sp"
+        android:background="#FF99FF"
+        />
+    <!--  对齐右下角（orientation="vertical" 在垂直方向上不起作用）  -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:text="Hello_World!"
+        android:textSize = "25sp"
+        android:background="#FF99FF"
+        />
+    <TextView
+        android:id="@+id/textView1Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Hello_World!"
+        android:textSize = "50sp"
+        android:layout_marginTop="50dp"
+        android:background="#FFAABB"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textView2Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Hello_World!"
+            android:textSize = "25sp"
+            android:background="#FF99FF"
+            />
+
+        <TextView
+            android:id="@+id/textView3Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Hello_World!"
+            android:textSize = "25sp"
+            android:background="#FF99EE"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textView4Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Hello_World!"
+            android:textSize = "25sp"
+            android:background="#FF99DD"
+            />
+
+        <TextView
+            android:id="@+id/textView5Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Hello_World!"
+            android:textSize = "25sp"
+            android:background="#FF99CC"
+            />
+    </LinearLayout>
+
+</LinearLayout>
