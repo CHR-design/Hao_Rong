@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Project01_TextView</string>
+    <string name="baidu">www.baidu.com</string>
+    <string name="字符">我最多可以有12个字符，天气真好，适当的可以出去玩一下，我最多可以有12个字符，天气真好，适当的可以出去玩一下</string>
 </resources>

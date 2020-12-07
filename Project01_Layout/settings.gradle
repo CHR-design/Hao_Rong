@@ -1,3 +1,8 @@
+include ':project06_gridlayout'
+include ':project05_absolutelayout'
+include ':project03_tablelayout2'
+include ':project04_framelayout'
+include ':project03_tablelayout'
 include ':project01_linearlayout'
 include ':project02_relativelayout'
 include ':app'

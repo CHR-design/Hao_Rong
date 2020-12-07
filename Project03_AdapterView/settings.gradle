@@ -1,0 +1,4 @@
+include ':myadapter'
+include ':listview'
+include ':app'
+rootProject.name = "Project03_AdapterView"
