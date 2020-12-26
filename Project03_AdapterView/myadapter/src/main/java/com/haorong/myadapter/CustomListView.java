@@ -14,12 +14,11 @@ import android.widget.ListView;
 public class CustomListView extends Activity implements OnItemClickListener {
     private ListView lv;
     //数据初始化
-    private int[] images = {R.drawable.a1, R.drawable.a2, R.drawable.a3, R.drawable.a1, R.drawable.a2, R.drawable.a3, R.drawable.a1, R.drawable.a2, R.drawable.a3, R.drawable.a1, R.drawable.a2, R.drawable.a3};
+    private static int[] images = {R.drawable.a1, R.drawable.a2, R.drawable.a3, R.drawable.a1, R.drawable.a2, R.drawable.a3, R.drawable.a1, R.drawable.a2, R.drawable.a3, R.drawable.a1, R.drawable.a2, R.drawable.a3};
     private String[] name = {"机", "李", "父", "机", "李", "父", "机", "李", "父", "机", "李", "父"};
     private String[] dec = {"机为尾", "李为中", "父为先", "机为尾", "李为中", "父为先", "机为尾", "李为中", "父为先", "机为尾", "李为中", "父为先"};
     private Custom[] data = new Custom[name.length];
 
-    private static int p;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,16 +38,13 @@ public class CustomListView extends Activity implements OnItemClickListener {
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        p = position;
         Intent intent = new Intent(this, NewActivity.class);
+        intent.putExtra("position",position);
         startActivity(intent);
     }
 
-    public static int getPosition() {
-        return p;
-    }
 
-    public int[] getImages() {
+    public static int[] getImages() {
         return images;
     }
 }

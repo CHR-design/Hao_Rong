@@ -1,6 +1,7 @@
 package com.haorong.myadapter;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -14,16 +15,18 @@ public class NewActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.custom_image);
         
-        CustomListView clv = new CustomListView();
-        int position = CustomListView.getPosition();
-        ImageView image = findViewById(R.id.icon);
-        image.setImageResource(clv.getImages()[position]);
-        image.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+        Intent intent = getIntent();
+        int position = intent.getIntExtra("position",-1);
+        if(position != -1){
+            ImageView image = findViewById(R.id.icon);
+            image.setImageResource(CustomListView.getImages()[position]);
+            image.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    finish();
+                }
+            });
+        }
     }
 
     @Override

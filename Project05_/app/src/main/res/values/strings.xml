@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Project05_保存文本</string>
+    <string name="txt">记事本</string>
+    <string name="save">保存</string>
+    <string name="txt1">请输入文本</string>
+    <string name="opentxt">打开记事本</string>
+</resources>
