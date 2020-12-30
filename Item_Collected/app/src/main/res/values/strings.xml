@@ -1,0 +1,4 @@
+<resources>
+    <string name = "app_name">Item_Collected</string>
+    <string name = "rule_password">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\'\"&#064;&#058;&#033;&#035;&#036;&#037;&#038;&#040;&#041;&#042;&#043;&#044;&#045;&#046;&#047;&#058;&#059;&#060;&#061;&#062;&#063;&#064;&#091;&#093;&#094;&#095;&#096;&#123;&#124;&#125;&#126;</string>
+</resources>
